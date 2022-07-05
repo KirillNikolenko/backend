@@ -5,3 +5,5 @@ Simple NodeJS service that contains one endpoint 'getCryptocurrencyInfo', which 
 .env file contains the environment variable 'PORT', which is the port number the server will be running on.
 
 To run the server use 'npm run dev'.
+
+Interviews.sql file with the 1st task is in the src/SQL folder.
