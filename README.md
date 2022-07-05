@@ -1,4 +1,4 @@
-# backend
+# Get cryptocurrency info
 
 Simple NodeJS service that contains one endpoint 'getCryptocurrencyInfo', which returns a list of both Ticker and Price of the cryptocurrencies. Wraps a 3rd party REST API of the Coin Gecko service.
 
