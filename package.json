@@ -4,8 +4,8 @@
   "description": "DMG - test task",
   "main": "src/index.ts",
   "scripts": {
-    "dev": "nodemon src/index.ts",
-    "build": "rm -rf build/ && prettier --write source/ && tsc"
+    "start": "nodemon src/index.ts",
+    "build": "tsc"
   },
   "repository": {
     "type": "git",

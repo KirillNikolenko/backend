@@ -1,14 +1,13 @@
 import express, { Express } from 'express';
 import dotenv from 'dotenv';
-import routes from './routes/route-crypto';
+import controller from './controllers/crypto-info';
 
 dotenv.config();
 
-const router: Express = express();
+const app: Express = express();
 
-/** Routes */
-router.use('/', routes);
+/** GET-endpoint that receives all crypto currencies and returns their Ticker and Price */
+app.get('/cryptoCurrencies', controller.getCryptocurrencyInfo);
 
-/** Server */
 const PORT: any = process.env.PORT ?? 8000;
-router.listen(PORT, () => console.log(`The server is running on port ${PORT}`));
+app.listen(PORT, () => console.log(`The server is running on port ${PORT}`));
